@@ -1,0 +1,247 @@
+<html lang ="en" dir="ltr">
+<head>
+	<style>
+		*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body{
+  background-color: #7a942e;
+  font family: montserrat;
+}
+nav{
+  background-color: #556b2f;
+  height: 80px;
+  width: 100%;
+ }
+label.logo{
+  color: black;
+  font-size: 35px;
+  line-height: 80px;
+  padding-bottom: 20px;
+  font-weight: bold;
+  margin-right: 10px;
+  margin-left: 0px;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: black;
+  font-size: 17px;
+padding: 7px 13px;
+    text-transform: uppercase;
+  border-radius: 3px;
+}
+a.active,a:hover{
+  
+  transition: .5s;
+  color: white;
+}
+.checkbtn{
+  font-size: 30px;
+  color: black;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display:none;
+}
+@media (max-width:952px) {
+label.logo{
+  font-size: 30px;
+  padding-left:30px;
+}
+nav ul li a {
+  font-size: 16px;
+}
+}
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+
+  ul{
+    display: block;
+    position: fixed;
+    width: 30%;
+    height: 50vh;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition:  all .5s;
+    background:transparent;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size:15px;
+  }
+  a:hover,a.active{
+    background:lightgrey;
+    color: #0082e6;
+  }
+  #check:checked~ul{
+    left: 0;
+  }
+}
+	</style>
+	<meta charset="utf-8">
+	<link rel="icon" href="https://us.123rf.com/450wm/irwanjos/irwanjos1506/irwanjos150600061/41721908-school-building-cartoon.jpg?ver=6" type="image/x-icon">
+	<title>Gyanodaya Ma Vi</title>
+	<meta name="viewport" content="width=device-widht,initial-scale=1.0">
+	<link rel="stylesheet" href="webschool.css">
+	<script src="https://kit.fontawesome.com/a076d05399.js" ></script>
+</head>
+<body>
+	<nav>
+<a class="logoimg" href="#"> <img class="avatar-image" src="schoollogo.jpg"></a>
+		<input type="checkbox"id="check">
+		<label for="check" class="checkbtn">
+			<i class="fas fa-bars"></i>
+		</label>
+			<label class="logo">Gyanodaya Ma.Vi</label>
+			<ul>
+				<li><a class="active" href="myschoolweb.html">Home</a></li>
+				<li><a  href="#idabout">About</a></li>
+				<li><a  href="#idcontact">Contact</a></li>
+				<li><a  href="#idfac">Facilities</a></li>
+			</ul>
+		</nav>
+	<body>
+		
+<div class="begindisplay">
+<div class="row">
+	<div class="column">
+<img src="https://cdn.pixabay.com/photo/2018/07/05/16/59/students-3518726__340.jpg" width="70%"height="100%" style="border-radius: 50%; margin-left:20%;padding-top:40px">
+</div>
+<div class="column">
+<br>
+	<br>
+
+	<br>
+<h4>An Investment in Education Pays the Best Interest!</h4>
+</div>
+</div>
+</div>
+<br>
+	<div class="row">	
+		<div class= "column">
+<img src="school2forweb.jpg"width="100%"height="300"><br>
+</div>
+<div class="column">
+	<img src="studentforweb.jpg"width="100%" height="300">
+</div>
+</div>	
+<div id="alldiv">
+	
+<div class="row">
+<div class="column">	
+<div class="about">	
+	<div id="idabout">
+			<h1 >About</h1>
+			<h3>Shree Gyanodaya Residential Secondary School was established in 2057 BS. It is located in Gaurigunj-6, Jhapa.The school runs classes from class Nursery to class 10. The school has been serving the education along with all the infrastructures for the proper development of student's educational,physical, mental and social well being with well qualified teachers.</h3>
+		</div>
+			</div>
+		</div>
+		<br>
+				<div class="column">
+					<div id="idfaci">
+					<div class="facilities">
+				<h1> Facilities</h1>
+				 	<h5>Transportation</h5>
+				<h5>Student friendly classroom</h5>
+				<h5>Pure Drinking water</h5>
+				<h5>Science lab and computer lab</h5>
+			</div>
+			</div>
+		</div>
+	</div>
+
+	<br>
+		<div class="row">
+		<div class="column">
+			<div id="idcontact">
+			<div class="contact">
+		<h1>Contact</h1>
+		<h3> Principal:Kalpana Thapa<br>
+		</h3>
+		<p>
+<i class="fas fa-phone-alt"></i> Phone: <br />
+<span>9852676511</span>
+</p>
+		
+		<p>
+<i class="fas fa-map-marker-alt"></i>Address: <br />
+<span>Gaurigunj-6,Jhapa</span>
+</p>
+		<a href="https:\\www.facebook.com/Gyanodaya Aawasiya Mavi-03">
+	<img src= "https://upload.wikimedia.org/wikipedia/en/thumb/0/04/Facebook_f_logo_%282021%29.svg/512px-Facebook_f_logo_%282021%29.svg.png"width="30" height="30" style= "margin-left:40px"> </a>
+</div>
+	</div>
+</div>
+<div class="colunm">
+	<div class="form">
+<p style="color:black; font-style: italic; font-size: 20px; text-align:center"> <b>You can leave your message here:</b></p>
+<script>
+	function validateform(){
+		if(myform.username.value==""){
+			alert("please enter your name!")
+		}
+		if(myform.email.value==""){
+			alert("please enter your email id!")
+		} 
+	}
+</script>
+<form name ="myform">
+<span>Name:</span><br>
+  <input type = "text" name="username" ><br>
+  <span>E-mail:</span><br>
+  <input type="email" name="email"><br>
+  <p style="font-size:17px">Your message:</p>
+  <textarea></textarea><br>
+
+<br><input type ="submit" value="Send" onclick="validateform()" size="30">
+</form>
+
+</div>
+</div>
+</div>
+</div>
+<br>
+<h1 style= text-align:center;>Thank You For Visiting!</h1>
+<div class="footer">
+
+
+<div class="container">
+
+<div class="col-md-6 col-sm-6 col-xs-12">
+<div class="copyright">
+<p>
+© 2021 All rights reserved  |  Gyanodaya Ma.Vi<br>
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+	</body>
+	</html>
+			

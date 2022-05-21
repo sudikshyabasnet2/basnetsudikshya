@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Calculator</title>
+</head>
+<script type="text/javascript">
+function myfunction(a){
+	myform.display.value+=a;
+}
+function myequalto(){
+	myform.display.value=eval(myform.display.value);
+
+}
+function ac(){
+	myform.display.value="0";
+}
+function backspace(){
+	var prevalue=myform.display.value;
+	myform.display.value=prevalue.substr(0,prevalue.length-1);
+}
+function fnsin(){
+	myform.display.value=Math.sin(myform.display.value);
+}
+function fncos(){
+	myform.display.value=Math.cos(myform.display.value);
+}
+function fntan(){
+	myform.display.value=Math.tan(myform.display.value);
+}
+function square(){
+	myform.display.value=Math.pow(myform.display.value,2);
+}
+function squarert(){
+	myform.display.value=Math.pow(myform.display.value,1/2);
+}
+</script>
+<style type="text/css">
+body{
+border: solid;
+border-color: darkgoldenrod; 
+margin-left: 320px;
+margin-right: 320px;
+padding-bottom: 20px;
+text-align:center;
+background-color: lightgrey;
+na
+}
+input[type="text"]{
+width:350px;
+height:60px;
+margin-top:10px; 
+border:double;
+border-color: darkgoldenrod;
+
+}
+
+input[type="button"]{
+width:50px;
+height:40px;
+background-color:grey;
+font-weight:bold;
+font-size:17px;
+border-color: darkgoldenrod;
+
+} 
+
+</style>
+<body>
+<form name="myform">
+	<h2 style="text-align:center; color:darkgoldenrod;"><u>CALCULATOR</u></h2>
+<input type="text" name="display"><br><br>
+<input type="button" name="" value="sin" onclick="fnsin()">
+<input type="button" name="" value="cos" onclick="fncos()">
+<input type="button" name="" value="tan" onclick="fntan()">
+<input type="button" name="" value="^2" onclick="square()">
+<input type="button" name="" value="Rt" onclick="squarert()"><br>
+<input type="button" name="" value="9" onclick="myfunction(9)">
+<input type="button" name="" value="8" onclick="myfunction(8)">
+<input type="button" name="" value="7" onclick="myfunction(7)">
+<input type="button" name="" value="clr" onclick="backspace()">
+
+<input type="button" name="" value="AC" onclick="ac('0')"><br>
+
+<input type="button" name="" value="6" onclick="myfunction(6)">
+<input type="button" name="" value="5" onclick="myfunction(5)">
+<input type="button" name="" value="4" onclick="myfunction(4)">
+<input type="button" name="" value="x" onclick="myfunction('*')">
+
+<input type="button" name="" value="/" onclick="myfunction('/')"><br>
+<input type="button" name="" value="3" onclick="myfunction(3)">
+<input type="button" name="" value="2" onclick="myfunction(2)">
+<input type="button" name="" value="1" onclick="myfunction(1)">
+<input type="button" name="" value="-" onclick="myfunction('-')">
+
+<input type="button" name="" value="+" onclick="myfunction('+')"><br>
+<input type="button" name="" value="0" onclick="myfunction('0')">
+
+<input type="button" name="" value="." onclick="myfunction('.')">
+<input type="button" name="" value="00" onclick="myfunction('00')">
+<input type="button" name="" value="000" onclick="myfunction('000')">
+
+<input type="button" name="" value="=" onclick="myequalto('=')"><br>
+
+</form>
+</body>
+</html>
